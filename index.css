@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+#container {
+    max-width: 375px;
+    margin: 30px auto;
+    border: 1px solid transparent;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 14px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    position: relative;
+    padding: 1.5em;
+
+    /* box-shadow: -8px 20px 0px white  ; */
+    box-shadow: 8px 25px 2px hsl(222, 54%, 11%), -8px 25px 2px hsl(222, 54%, 11%);
+
+
+}
+
+#imgContainer {
+    width: 100%;
+    /* border:  1px solid red; */
+    border-radius: 10px;
+    position: relative;
+}
+
+
+#hov {
+    width: 100%;
+    height: 99%;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    position: absolute;
+    border-radius: 14px;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    /* padding-bottom: 20%; */
+}
+
+#hov:hover {
+    opacity: 100%;
+}
+
+#hov img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+#hov:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    border-radius: 14px;
+    position: relative;
+}
+
+/* #hov{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+} 
+
+img:hover {
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
+} 
+*/
+
+#infoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+#eq {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-weight: 550;
+    /* margin-left: px; */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+#eq:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#text {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+#cost {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* margin: 20px; */
+    margin-top: 20px;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+#eth {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#days {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.words {
+    margin-bottom: 20px;
+}
+
+svg {
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+#last {
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+#face {
+    width: 30px;
+    /* margin-left: 2px; */
+    /* margin-bottom: 20px; */
+    /* background-color: white;
+    padding: 1px;*/
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 0;
+    /* height: 100%; */
+}
+
+#creation {
+    color: hsl(215, 51%, 70%);
+    margin-left: 12px;
+    margin-right: 3px;
+}
+
+#jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Outfit', sans-serif;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
